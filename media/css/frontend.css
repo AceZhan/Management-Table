@@ -1,0 +1,122 @@
+#maintable {
+	max-width:100% !important;
+ 	margin: auto !important;
+  overflow: auto !important;
+}
+
+#maintable th {
+  background-color: #a70000 !important;
+  color:white !important;
+  min-width: 159px !important;
+}
+
+#fill {
+  background-color: #a70000 !important;
+  min-width: 82px !important;
+}
+
+.inputform {
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    display: inline-block !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    border-radius: 5px !important;
+    background-color: #f2f2f2 !important;
+    padding: 20px !important;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+.headcol {
+    position: absolute !important;
+    width: 120px !important;
+    right: 290px !important;
+    top: auto !important;
+    border-top-width: 3px !important;
+    margin-top: -1px !important;
+}
+
+.inputBox {
+    font-family: Verdana,Arial,Helvetica,sans-serif !important;
+    height: 25px !important;
+    width: 167px !important;
+}
+
+tr, th {
+	font-family: Verdana,Arial,Helvetica,sans-serif !important;
+	border-collapse: collapse !important;
+  font-size: 12px !important;
+	border: 1px solid black !important;
+	padding: 10px !important;
+}
+
+
+
+.btn {
+  background: #949494;
+  background-image: -webkit-linear-gradient(top, #949494, #545454) !important;
+  background-image: -moz-linear-gradient(top, #949494, #545454) !important;
+  background-image: -ms-linear-gradient(top, #949494, #545454) !important;
+  background-image: -o-linear-gradient(top, #949494, #545454) !important;
+  background-image: linear-gradient(to bottom, #949494, #545454) !important;
+  -webkit-border-radius: 4 !important;
+  -moz-border-radius: 4 !important;
+  border-radius: 4px !important;
+  font-family: Arial !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  padding: 0px 2px 6px 2px !important;
+  border: solid #000000 1px !important;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #b50202;
+  background-image: -webkit-linear-gradient(top, #b50202, #990000);
+  background-image: -moz-linear-gradient(top, #b50202, #990000);
+  background-image: -ms-linear-gradient(top, #b50202, #990000);
+  background-image: -o-linear-gradient(top, #b50202, #990000);
+  background-image: linear-gradient(to bottom, #b50202, #990000);
+  text-decoration: none;
+}
+
+.collapsible {
+    font-family: Verdana,Arial,Helvetica,sans-serif !important;
+    font-weight: bold !important;
+    background-color: #b50202 !important;
+    color: white !important;
+    cursor: pointer !important;
+    padding: 5px !important;
+    width: 99% !important;
+    border: none !important;
+    text-align: left !important;
+    outline: none !important;
+    font-size: 12px !important;
+    border: 1px solid black !important;
+}
+
+.pagination {
+    background-color: #545454 !important; 
+    border: 1px solid #ccc !important;
+    color: white !important;
+    padding: 5px 15px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-weight: bold !important;
+    height: 20px !important;
+}
+
+.pagination:hover, .pagination:active {
+  background-color: #b50202 !important;
+}
+
+.msg {
+  font-family: Verdana,Arial,Helvetica,sans-serif !important;
+  font-size: 12px !important;
+  padding: 10px !important;
+}

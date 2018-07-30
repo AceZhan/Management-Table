@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>Student Management</name>
+	<creationDate>June 2018</creationDate>
+	<author>Ace Zhan</author>
+	<version>1.0.0</version>
+	<description>Displays Student Information</description>
+
+	<media destination="com_studentmanagement" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</media>
+
+	<files folder="components/com_studentmanagement">
+		<filename>studentmanagement.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+	</files>
+
+	<administration>
+		<files folder="administrator/components/com_studentmanagement">
+			<filename>studentmanagement.php</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+		</files>
+	</administration>
+
+	<menu link="option=com_studentmanagement" img='../media/com_studentmanagement/images/table.png'>Student Management Menu</menu>
+
+</extension>
