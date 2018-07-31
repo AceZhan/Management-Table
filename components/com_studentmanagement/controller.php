@@ -13,13 +13,13 @@ class StudentManagementController extends JController
 		?>
 		<details>
 		<summary class = "collapsible">Search</summary>
-			<form action=index.php/component/studentmanagement/?task=table method="post">
+			<form action=?task=table method="post">
 				<div class="inputform">
 					<label>Email</label><br>
 					<input type="text" class="inputBox" name="searchEmail"><br><br>
 
 					<label>Program</label><br>
-					<input type="text" class="inputBox" name="searchProg"><br><br>
+					<input type="text" class="inputBox" name="searchProg"><br>
 
 					<label>Class</label><br>
 					<input type="text" class="inputBox" name="searchClass"><br>
@@ -149,7 +149,7 @@ class StudentManagementController extends JController
 			} else {
 				foreach ($rows as $row) {
 				echo "<table>";
-				echo "<form action=index.php/component/studentmanagement/?task=update method='post'>";
+				echo "<form action=?task=update method='post'>";
 				echo "<tr>";
 				echo '<td><input type="text" name="fullName" class="inputBox" value="'.htmlspecialchars($row->name).'"></td>';
 				echo '<td><input type="text" name="email" class="inputBox" value="'.htmlspecialchars($row->email).'"></td>';
@@ -206,7 +206,7 @@ class StudentManagementController extends JController
 
 		<details>
 			<summary class = "collapsible">Insert</summary>
-			<form action="index.php/component/studentmanagement/?task=insert" method="post">
+			<form action="?task=insert" method="post">
 				<div class="inputform">
 					<label>Name</label><br>
 					<input type="text" class="inputBox" id="insertName" name="insertName"><br><br>
@@ -269,7 +269,7 @@ class StudentManagementController extends JController
 			</form>
 		</details>
 		<br>
-		<form action=index.php/component/studentmanagement/?task=export method="post">
+		<form action=?task=export method="post">
 			<input type="submit" name="export" class="btn" value="CSV Export" />
 		</form>
 
@@ -278,7 +278,7 @@ class StudentManagementController extends JController
 
 		<br>
 		<br>
-		<form method="post" action="index.php/component/studentmanagement/?task=import" enctype="multipart/form-data">
+		<form method="post" action="?task=import" enctype="multipart/form-data">
 			<input type="file" name="file" />
 			<input type ="submit" class="btn" name="import" value="Import">
 		</form>
@@ -314,7 +314,7 @@ class StudentManagementController extends JController
 			echo "Deleting";
 		}
 
-		header("refresh:1; url=index.php/component/studentmanagement/?task=table");
+		header("refresh:1; url=?task=table");
 	}
 
 	/**
@@ -356,7 +356,7 @@ class StudentManagementController extends JController
 
 			echo "Inserting";
 
-			header("refresh:1; url=index.php/component/studentmanagement/?task=table");
+			header("refresh:1; url=?task=table");
 
 		}
 	}
@@ -432,6 +432,6 @@ class StudentManagementController extends JController
 
 			echo "Importing";
 		}
-		header("refresh:1; url=index.php/component/studentmanagement/?task=table");
+		header("refresh:1; url=?task=table");
 	}
 }
